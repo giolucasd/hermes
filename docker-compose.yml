@@ -13,3 +13,9 @@ services:
     ports:
       - "15672:15672"
       - "5672:5672"
+
+  resizer:
+    build: ./resizer
+    links:
+      - queue:queue
+      - api:api
