@@ -1,0 +1,38 @@
+{
+    "terminal.integrated.scrollback": 10000,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": true,
+    "editor.minimap.maxColumn": 40,
+    "git.autofetch": true,
+    "files.watcherExclude": {
+      "**/__pycache__/**": true,
+      "**documents/**": true,
+      "**/node_modules/**": true,
+      "**/site-packages/**": true
+    },
+    "python.formatting.provider": "autopep8",
+    "python.linting.enabled": true,
+    "python.linting.flake8CategorySeverity.E": "Information",
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.terminal.activateEnvironment": false,
+    "python.workspaceSymbols.exclusionPatterns": [
+      "**/__pycache__/**",
+      "**/documents/**",
+      "**/node_modules/**",
+      "**/site-packages/**"
+    ],
+    "[python]": {
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+        "source.fixAll": true
+      },
+      "editor.formatOnPaste": true,
+      "editor.formatOnSave": true,
+      "editor.rulers": [100]
+    },
+    "[markdown]": {
+      "editor.wordWrap": "on",
+      "editor.wordWrapColumn": 100
+    },
+  }

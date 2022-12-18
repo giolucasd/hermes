@@ -1,0 +1,17 @@
+[flake8]
+exclude =
+    # No need to traverse our git directory
+    .git,
+    # There's no value in checking cache directories
+    __pycache__
+max-complexity = 10
+max-line-length = 100
+per-file-ignores =
+    # Ignore import not used
+    __init__.py: F401
+# B950 and E501: Black deals with line-length like flake8-bugbear
+# E203: Black deals with whitespace around operators
+# F401, F403, F405: Star imports are django pattern way of defining settings
+select = C,E,F,W,B,B950
+extend-ignore = E203, E501, F401, F403, F405, W605, B012
+# TODO: remove W605 and B012 by fixing the code
