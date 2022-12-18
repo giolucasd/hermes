@@ -3,6 +3,7 @@
 from images.models import Resizing
 from rest_framework import serializers
 
+from .producer import send_to_resize_service
 
 
 # pylint: disable=protected-access
@@ -15,6 +16,7 @@ class ResizingSerializer(serializers.ModelSerializer):
         instance = ModelClass._default_manager.create()
         instance = self.update(instance, validated_data)
 
+        send_to_resize_service(instance)
 
         return instance
 
