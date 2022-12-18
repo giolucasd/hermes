@@ -5,3 +5,9 @@ services:
     build: ./api
     ports:
       - "8000:8000"
+
+  queue:
+    build: ./queue
+    ports:
+      - "15672:15672"
+      - "5672:5672"
