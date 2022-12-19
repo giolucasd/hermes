@@ -4,7 +4,7 @@
 
 Refactor architecture to include a storage service shared between API and resizer in order to avoid sending base64 images through network.
 
-![Arch-v2](docs/arch-v2.png?raw=true)
+![Arch-v2](static/arch-v2.png?raw=true)
 
 ## 2. Size as Param
 

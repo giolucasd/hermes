@@ -6,7 +6,7 @@ Simple API, message queue, micro-service exploration.
 
 The project is very simple: a REST API that receives an image, send it through a queue to another service that resize the given image to size 384x384.
 
-![Arch-v1](docs/arch-v1.png?raw=true)
+![Arch-v1](static/arch-v1.png?raw=true)
 
 ## Setup
 
